@@ -1,0 +1,21 @@
+<h1>Pages#score</h1>
+<p>Find me in app/views/pages/score.html.erb</p>
+
+<p> attempt: <%= @attempt %> </p>
+<p> start time: <%= @start_time %> </p>
+<p> end time: <%= @end_time %> </p>
+<p> grid: <%= @grid %> </p>
+<p> result: <%= @run_game %> </p>
+
+<h3> ******** Now your result ********</h3>
+
+
+
+<p> "Your word: <%= @attempt %> </p>
+<p> "Time Taken to answer: <%= @run_game[:time] %> </p>
+<p> "Your score: <%= @run_game[:score] %> </p>
+<p> "Message: <%= @run_game[:message] %> </p>
+
+<p>*****************************************************</p>
+
+<%= link_to "Play again", game_path %>
